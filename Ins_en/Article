@@ -1,40 +1,54 @@
 Artificial neural networks explained in simple words
 
+<img src ="https://habrastorage.org/files/8b7/670/081/8b767008109149b9b48ee3058e62e028.png" alt="Нейронная сеть как она есть" style="width: 80%; display: block; margin: 0 auto;"/>
+
 When I used to start a conversation about neural networks over a bottle of beer, people were casting glances at me of what seemed to be fear; they grew sad, sometimes with their eyelid twitching. In rare cases, they were even eager to take refuge under the table. Why? These networks are simple and instinctive, actually. Yes, believe me, they are! Just let me prove this is true!
 
-Suppose there are two things I’m aware of about the girl: she looks pretty to my taste or not, and I have lots to talk about with her or I haven’t. True and false will be one and zero respectively. We’ll take similar principle for appearance. The question is: “What girl I’ll fall in love with, and why?”
-We also can think it straight and uncompromisingly: “If she looks pretty and there’s plenty to talk about, then I will fall in love. If neither is true, then I quit”.
 
-But what if I like the lady but there’s nothing to talk about with her? Or vice versa?
+Suppose there are two things I’m aware of about the girl: she looks pretty to my taste or not, and I have lots to talk about with her or I haven’t. True and false will be one and zero respectively. We’ll take similar principle for appearance. The question is: _“What girl I’ll fall in love with, and why?”_
+
+
+We also can think it straight and uncompromisingly: _“If she looks pretty and there’s plenty to talk about, then I will fall in love. If neither is true, then I quit”_.
+
+
+_But what if I like the lady but there’s nothing to talk about with her? Or vice versa?_
+
 
 It’s understood that for each of us one of these things will be of more importance. To be precise, each criterion has its own degree of importance, or in other words its weight. Criterion multiple by weight will give us “appearance impact” or “conversation impact”, accordingly.
 
 Now, with my conscience clear I can answer my own question:
 
-“If charisma impact and talkativeness impact in total make value more than “in love” then I’ll go for it …”
+_“If charisma impact and talkativeness impact in total make value more than “in love” then I’ll go for it …”_
 
-image
+<img src ="https://habrastorage.org/files/ead/ac7/0bd/eadac70bd4984a9a83630b4d8b8ebf89.png" style="width: 70%; display: block; margin: 0 auto;"/>
+
 So if I put more weight in lady’s talkativeness and less weight in the way she looks, then in a disputable situation I will fall in love with a person I’d like to chat with. The opposite being true, too.
 
-image
+<img src ="https://habrastorage.org/files/bfe/d13/e50/bfed13e5071e427e934455c535f39487.png" style="width: 70%; display: block; margin: 0 auto;"/>
+
 This rule is a neuron proper.
 
-An artificial neuron is a function that transforms multiple inputs into one output. By setting up the weights of these inputs and threshold of excitation, we adjust the neuron’s adequacy. Basically, for many of us, the science of life ends on this level, but this story is not about us, is it?
+__An artificial neuron is a function that transforms multiple inputs into one output.__ By setting up the weights of these inputs and threshold of excitation, we adjust the neuron’s adequacy. Basically, for many of us, the science of life ends on this level, but this story is not about us, is it?
 
 Let’s draw a few more conclusions:
 
-In case both weights are low, it will be difficult for me to fall in love with anyone.
-In case both weights are very high, I can fall in love even with a light pole.
-You can also make me love the pole if you decrease my amorousness threshold. But I beg you not to do this to me! Let’s forget about it for now, okay?
-Neural network
+- In case both weights are low, it will be difficult for me to fall in love with anyone.
+- In case both weights are very high, I can fall in love even with a light pole.
+- You can also make me love the pole if you decrease my amorousness threshold. But I beg you not to do this to me! Let’s forget about it for now, okay?
+
+
+## Neural network
 
 We can hardly find clearly nice and explicitly talkative ladies. Not all amorousnesses are equal no matter who says what. For this reason, we should avoid brutal and uncompromising “0” and “1” and replace them with percentage values. Then, it’s possible to say “I’m love-struck” (80%) or “This lady is not very talkative” (20%).
+
 Our primitive “all-or-nothing neuron” from the above does not fit the case. It is superseded with a “wise neuron” which operates giving us values from 0 to 1 depending on input data.
 
-image
+<img src ="https://habrastorage.org/files/1c9/39c/bab/1c939cbab74b4a49b02e7f893da97b3f.png" style="width: 100%; display: block; margin: 0 auto;"/>
+
 A “wise neuron” may say to us: “This lady is pretty enough but I don’t know  any common points we can talk about, and that’s why I’m not so fond of her”.
 
-image
+<img src ="https://habrastorage.org/files/5e4/251/6cf/5e42516cfd0f45da9fbdb39a35b05994.png" style="width: 70%; display: block; margin: 0 auto;"/>
+
 Lets’ go further. We’ll use these two facts for a different assessment: how good it’ll be to work (cooperate) with such girl? Our actions will be absolutely the same – let’s add a wise neuron and adjust weights to feel comfortable.
 
 Judging girls based on two features will give us a very rough result. Let’s introduce one more criterion – money! It will be ranging from zero (absolutely poor) till one (Rockefeller’s daughter). Let’s see how our assumptions change with the money criterion introduced.
@@ -43,48 +57,54 @@ For myself, I have decided that in terms of sexual appeal money are not so impor
 
 In terms of business relationships, it makes absolutely no difference for me how rich is the girl, so I suggest the money weight to be zero.
 
-image
+<img src ="https://habrastorage.org/files/7bf/11a/b7b/7bf11ab7b53d4b67b0eb2e1f09f0f25f.png" style="width: 80%; display: block; margin: 0 auto;"/>
+
 It’s folly to check out a girl just for work or love affair. Let’s consider how pleasing could it be if we decided to travel with her:
 
-Charisma is neutral here (weight is zero or very low).
-Being talkative is good (positive weight).
-In real trips, when the money runs out suddenly, it’s a very thrilling time. For this reason I’ll give the money a slightly negative weight.
+- Charisma is neutral here (weight is zero or very low).
+- Being talkative is good (positive weight).
+- In real trips, when the money runs out suddenly, it’s a very thrilling time. For this reason I’ll give the money a slightly negative weight.
+
+
 When making all three schemes into one, we’ll discover that we have shifted to a more thoughtful level of judgment: from charisma, dollar bills and talkativeness – to admiration, cooperation, and comfort when traveling together. Note these signals can vary from zero to one, too. This means I can finally add one last “all-or-nothing neuron” to let it answer my question exactly: “should I marry her or not?”
 
-image
+<img src ="https://habrastorage.org/files/b64/d4c/138/b64d4c138872468bb77eb5b1d9badc1b.png" style="width: 100%; display: block; margin: 0 auto;"/>
+
 Well, of course, not everything is that simple (in terms of women). Let’s introduce a little of drama and reality to our simple and rosy world. First, we’ll make the “marry-or-not” neuron a wise one. It’s a human nature to hesitate, one way or another. One more thing, we’ll add the “want-children-from-her” neuron, and to be very close to the reality – “keep-away-from-her” neuron.
 
 I understand nothing of women, so my primitive network now looks like the illustration at the top of this article.
 
 Input assertions are called “input layer”, final judgments – “output layer”, while hidden in the center is a “hidden layer”. The hidden layer is my judgments and unfinished thoughts no one knows about. Hidden can be several layers or none of them.
 
-Away from all-or-nothing thing
+## Away from all-or-nothing thing
 
 Do you remember my talking about the negative effect the money has on my desire to go on a trip with someone? Well, I was cheating. For joint trips somewhere you’d better have a person by your side with money, neither too much nor very little. For me, it seems more exciting.
 
 Still, here I have a challenging situation:
 
-If I make money weight negative, then the less money the better.
-If money weight is positive, the more money the better.
-If money has zero weight, then it does not matter at all.
+  If I make money weight negative, then the less money the better.
+  If money weight is positive, the more money the better.
+  If money has zero weight, then it does not matter at all.
+
 So, the weight only is not enough for me to figure out “no-more-no-less” situation!
 
 To bypass it, I’ll invent two new neurons: “money-is-much”, “money-is-little” and feed my lady’s cash flow to their inputs.
 
 Now I have two judgments: “much” and “little”. If two outputs are insignificant, then I literary get “neither-much-nor-little” thing. That is, at the output we’ll place one more neuron with negative weights:
 
-image
-“Neither-much-nor-little” thing: Arrows in red and blue showing positive and negative relations respectively.
+<img src ="https://habrastorage.org/files/2a9/053/272/2a9053272a4f493393213005bbca8892.png" style="width: 80%; display: block; margin: 0 auto;"/>
+
+_“Neither-much-nor-little” thing: Arrows in red and blue showing positive and negative relations respectively._
 
 In general, this means neurons are reminiscent of blocks from a construction kit. Like a processor is built from transistors, neurons together can form a brain. For instance, “rich-or-smart” judgment can be presented as follows:
 
-image
-“Either-or” thing: Arrows in red and blue showing positive and negative relations respectively.
+<img src ="https://habrastorage.org/files/79a/e9b/426/79ae9b426f1c4fe2ac693ed90950556a.png" style="width: 80%; display: block; margin: 0 auto;"/>
+_“Either-or” thing: Arrows in red and blue showing positive and negative relations respectively._
 
 Or this way:
 
-image
-We can replace “wise” neurons with “all-or-nothing” ones and get XOR logical operator. The point is not to forget to adjust thresholds of excitation.
+<img src ="https://habrastorage.org/files/3f8/5d0/11a/3f85d011a0d94290b7ec8ad06a233df7.png" style="width: 80%; display: block; margin: 0 auto;"/>
+_We can replace “wise” neurons with “all-or-nothing” ones and get XOR logical operator. The point is not to forget to adjust thresholds of excitation._
 
 Unlike transistors and uncompromising “if – then” logic of a typical programmer, neuron network is capable of weighted decisions, the results of which will be changing through smooth variations of input parameters. Here is the wisdom!
 
@@ -94,7 +114,7 @@ Imagine my making this marriage and love thing more and more complex to finally 
 
 However, unlike our synthetic example of a 3x3 network, where each neuron in the hidden layer is sufficient and accurately formalized, in the real network this is not necessarily so. In a well-designed network, the size of which is not excessive for solving the given task, each neuron will be detecting a certain attribute, but this absolutely does not mean that in our language we can find a word or phrase suitable for describing it. Applicable to the individual this means his or her certain feature you can feel but cannot explain it in words.
 
-Training
+## Training
 
 A few lines above I mentioned a well-designed network, hence likely to provoke your unspoken question: “And how can we design a network comprising thousands of neurons. How many “man years” and ruined lives do we need to achieve that?” I’m afraid answering the second part. Way better will be to make adjustment procedures automatic, forcing the network to do that job itself. Such automation process is called training. To provide a general idea, I should go back to the original metaphor of “critically important issue”:
 
@@ -107,4 +127,4 @@ Logically, I should further write all things down in detail, but I’m afraid th
 
 Everything stated above is true for artificial neuron networks of “perceptron” type. Other networks are alike according to principles but also have their own peculiarities.
 
-I wish you have good weights and excellent samplings for your training! And if you don’t need them already, then tell someone else about this.
+I wish you have good weights and excellent samplings for your training! And if you don’t need them already, then tell someone else about this article.
